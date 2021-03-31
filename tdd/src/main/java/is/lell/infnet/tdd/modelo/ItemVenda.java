@@ -11,6 +11,10 @@ public class ItemVenda {
 		this.quantidade = quantidade;
 	}
 
+	public String getNome() {
+		return produto.getNome();
+	}
+	
 	public double getSubTotal() {
 		return getProduto().getPreco() * quantidade;
 	}
@@ -29,6 +33,11 @@ public class ItemVenda {
 
 	public void setProduto(Produto produto) {
 		this.produto = produto;
+	}
+
+	@Override
+	public String toString() {
+		return "ItemVenda = [" + produto + ", quantidadeVenda=" + quantidade + "]\n";
 	}
 	
 	

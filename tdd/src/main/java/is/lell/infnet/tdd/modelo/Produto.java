@@ -33,11 +33,17 @@ public class Produto {
 		this.preco = preco;
 	}
 
-	public int getQuantidade() {
+	public int getQuantidadeEstoque() {
 		return quantidadeEstoque;
 	}
 
-	public void setQuantidade(int quantidade) {
-		this.quantidadeEstoque = quantidade;
+	public void setQuantidadeEstoque(int quantidadeEstoque) {
+		this.quantidadeEstoque = quantidadeEstoque;
 	}
+
+	@Override
+	public String toString() {
+		return "Produto [nome=" + nome + ", preco=" + preco + ", quantidadeEstoque=" + quantidadeEstoque + "]";
+	}
+	
 }
